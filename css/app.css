@@ -2,9 +2,8 @@
   box-sizing: border-box; }
 
 body {
-  background-image: url("../img/Brick-01.png");
+  background-image: url("../img/Brick2-02.png");
   background-size: cover;
-  background-repeat: no-repeat;
   margin: 0;
   font-family: 'Roboto Condensed', sans-serif;
   padding: 2rem;
