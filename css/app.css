@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-image: url("../img/Brick-01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 2rem;
+  height: 100%; }
+
+main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  grid-gap: 2rem; }
+  @media screen and (min-width: 40em) {
+    main {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto; } }
+
+.logo {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  align-self: center; }
+  @media screen and (min-width: 65em) {
+    .logo {
+      grid-column: 1; } }
+  .logo img .jwu {
+    height: 100%; }
+
+.information {
+  grid-column: 1;
+  align-self: center; }
+  @media screen and (min-width: 40em) {
+    .information {
+      grid-column: 1 / span 2;
+      justify-self: center;
+      text-align: center; } }
+  @media screen and (min-width: 65em) {
+    .information {
+      grid-column: 2;
+      text-align: left; } }
+  .information h1 {
+    margin: 0;
+    color: #f48f5b;
+    font-size: 1.3rem; }
+    @media screen and (min-width: 30em) {
+      .information h1 {
+        font-size: 2rem; } }
+  .information a {
+    grid-column: 1;
+    justify-self: start;
+    align-self: end;
+    color: #42e8e3; }
+  .information h2 {
+    margin: 0;
+    color: #f48f5b;
+    font-size: 1.1rem; }
+    @media screen and (min-width: 30em) {
+      .information h2 {
+        font-size: 1.5rem; } }
+  .information p {
+    color: white;
+    border-left: 6px solid #f48f5b;
+    padding-left: 0.5rem; }
+  .information span {
+    color: #f48f5b; }
+
+.content {
+  grid-column: 1;
+  display: grid;
+  align-self: start;
+  grid-gap: 2rem; }
+  @media screen and (min-width: 40em) {
+    .content {
+      grid-column: 1 / span 2;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr; } }
+  @media screen and (min-width: 65em) {
+    .content {
+      grid-column: 1 / span 2;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr; } }
+  .content img {
+    width: 100%;
+    border: 1px solid #f48f5b; }
+
+/*# sourceMappingURL=app.css.map */
